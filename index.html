@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHONENCY - Artiste Musical</title>
+    <title>SHONENCY</title>
     <style>
         * {
             margin: 0;
@@ -75,8 +75,8 @@
         }
 
         .tagline {
-            font-size: 1.5rem;
-            margin-top: 1rem;
+            font-size: 2rem;
+            margin-top: -1rem;
             opacity: 0.9;
             letter-spacing: 0.3em;
             text-transform: uppercase;
@@ -353,6 +353,13 @@
             animation-delay: 10s;
         }
 
+        .logo-img {
+            width: 350px; /* adapte à la taille de ton logo */
+            max-width: 80vw;
+            animation: fadeInUp 1s ease forwards 0.3s;
+        }
+
+
         @keyframes float {
             0%, 100% { transform: translate(0, 0); }
             33% { transform: translate(50px, -50px); }
@@ -385,9 +392,10 @@
 
     <section id="accueil" class="hero">
         <div class="hero-content">
-            <h1 class="logo">SHONENCY</h1>
-            <p class="tagline">Sound of Tomorrow</p>
+            <img src="assets/sy.png" alt="SHONENCY Logo" class="logo-img">
+            <p class="tagline">SHONENCY</p>
         </div>
+
         <div class="scroll-indicator">
             <svg width="30" height="50" viewBox="0 0 30 50">
                 <rect x="5" y="5" rx="15" ry="15" width="20" height="40" 
@@ -404,10 +412,13 @@
         <h2 class="section-title">Derniers Titres</h2>
         <div class="music-grid">
             <div class="music-card">
-                <div class="album-cover">🎵</div>
-                <h3 class="track-title">A deux en 2070</h3>
-                <p class="track-info">Single • 2025</p>
-            </div>
+                <div class="album-cover">
+                    <img src="assets/adeuxen2070.jpg" alt="Cover de l'album A deux en 2070">
+                </div>
+                    <h3 class="track-title">A deux en 2070</h3>
+                    <p class="track-info">Single • 2025</p>
+                </div>
+                
             <div class="music-card">
                 <div class="album-cover">🎧</div>
                 <h3 class="track-title">Midnight Pulse</h3>
